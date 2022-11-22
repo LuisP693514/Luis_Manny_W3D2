@@ -2,6 +2,8 @@
 
 class Card
 
+    attr_reader :value
+
     def initialize(value)
         @value = value
         @face_value = false
@@ -18,6 +20,6 @@ class Card
 
 end
 
-c = Card.new
+# c = Card.new(4)
 
-c.hide #-> @face_value = face down
+# c.hide #-> @face_value = face down
