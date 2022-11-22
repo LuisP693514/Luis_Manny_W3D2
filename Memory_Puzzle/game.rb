@@ -1,2 +1,6 @@
 
-#game class
+#Game class
+
+class Game 
+
+end
