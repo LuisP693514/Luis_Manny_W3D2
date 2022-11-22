@@ -70,11 +70,4 @@ class Board
 end
 
 
-b = Board.new(4)
-b.populate
-# p b.grid
-b.render
-puts '---------'
-b.reveal([1,2])
 
-b.render
