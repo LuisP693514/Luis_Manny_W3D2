@@ -33,6 +33,10 @@ class Board
         end
     end
 
+    def shuffle
+        20.times do 
+        @grid.transpose.reverse
+    end
 
 
 end
@@ -41,3 +45,5 @@ end
 b = Board.new(4)
 b.populate
 p b.grid
+
+
