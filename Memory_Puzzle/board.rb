@@ -1,6 +1,5 @@
 
-require_relative "card.rb"
-require "byebug"
+require_relative 'card'
 
 class Board
     attr_reader :grid
@@ -9,7 +8,9 @@ class Board
     def initialize(num)
 
         @grid = Array.new(num) { Array.new(num) }
-
+        populate
+        @grid.each {|row| row.shuffle!}
+        @grid.shuffle!
     end
 
     def populate
@@ -30,9 +31,7 @@ class Board
             end
         end
 
-        100.times do
-            @grid.each {|row| row.shuffle!}
-        end
+        
 
     end
 
@@ -42,8 +41,8 @@ class Board
         @grid.each do |row|
 
             row.each do |card|
-                print ' '
-                # card.reveal 
+                print ""
+
                 if !card.face_value?
                     print " "
                 else

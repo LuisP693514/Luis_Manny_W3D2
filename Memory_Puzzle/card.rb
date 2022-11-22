@@ -23,7 +23,3 @@ class Card
     end
 
 end
-
-# c = Card.new(4)
-
-# c.hide #-> @face_value = face down
