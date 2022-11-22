@@ -18,6 +18,10 @@ class Card
         @face_value = true
     end
 
+    def face_value?
+        @face_value
+    end
+
 end
 
 # c = Card.new(4)
